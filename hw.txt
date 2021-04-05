@@ -19,7 +19,8 @@ Create class Customer (with all the peoprties identical to the table) [POJO]
 +ToString
 
 4.
-Create a CustomerDAO which executes:
+[like we did in class. see demo code]
+Create a CustomerDAO with these methods executes:
 selectQuery (String query) : void (prints result to screen)
 updateQuery (String query) : void (print how many records were update into the screen)
 getAllCustomers () : ArrayList<Customer>
