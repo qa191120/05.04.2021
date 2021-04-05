@@ -1,0 +1,45 @@
+1.
+Create a table using this query:
+create table Customer
+(
+	Id integer not null
+		constraint Customer_pk
+			primary key autoincrement,
+	Firstname text not null,
+	Lastname text not null,
+	Numberoforders int not null,
+	Height real not null
+);
+
+2. 
+Insert 5 records with data as you choose
+
+3.
+Create class Customer (with all the peoprties identical to the table) [POJO]
++ToString
+
+4.
+Create a CustomerDAO which executes:
+selectQuery (String query) : void (prints result to screen)
+updateQuery (String query) : void (print how many records were update into the screen)
+getAllCustomers () : ArrayList<Customer>
+*etgar: getCustomerById (int id) : Customer -- will return the customer with the specific given id
+
+5.
+[like we did in class. see demo code]
+From Main:
+call selectQuery ("Select * from Customers")
+call updateQuery ("Update customers set Numberoforders = Numberoforders + 1 where id > 0")
+call getAllCustomers, then print the results using iterator
+*etgar use Scanner to get an integer number from the user then get the Customer with the specific id given as input
+
+6.
+implement Comparable in Customer (by Lastname)
+call getAllCustomers, now sort (by comparable) + print using iterator
+
+7.
+create Comparator to sort by number of orders
+call getAllCustomers, now sort (by the comparator) + print using iterator
+
+
+
